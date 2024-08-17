@@ -11,10 +11,15 @@
       <% messages.forEach((message) => {%>
       <li>
         <p><%= message.user %></p>
-        <p><%= message.text %></p>
+        <p>
+          <%= message.text %>
+          <button>open</button>
+        </p>
         <p><%= message.added %></p>
       </li>
       <%})%>
     </ul>
+
+    add a new message <a href="/new">here</a>
   </body>
 </html>
