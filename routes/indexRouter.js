@@ -13,7 +13,9 @@ const messages = [
   },
 ];
 
-router.get('/', (req, res) => res.send('Hello good'));
+router.get('/', (req, res) => {
+  res.render('index', { messages });
+});
 
 router.get('/new', (req, res) => res.send('create'));
 
