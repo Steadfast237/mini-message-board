@@ -13,6 +13,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/', IndexRouter);
 
-const PORT = 3000;
+const PORT = 8000;
 
 app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
